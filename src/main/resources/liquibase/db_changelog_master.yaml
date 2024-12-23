@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - include:
+      file: classpath:liquibase/db_changelog/changelog_V1.sql
+  - include:
+      file: classpath:liquibase/db_changelog/table_membe.sql
+  - include:
+      file: classpath:liquibase/db_changelog/admins_hac.sql
+  - include:
+      file: classpath:liquibase/db_changelog/add_max_teams.sql
+  - include:
+      file: classpath:liquibase/db_changelog/add_photo.sql
+  - include:
+      file: classpath:liquibase/db_changelog/not_update.sql
+  - include:
+      file: classpath:liquibase/db_changelog/add_not_up.sql
+  - include:
+      file: classpath:liquibase/db_changelog/aaa.sql

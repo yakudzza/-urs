@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hk_db
+    username: postgres
+    password: qwerty123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  liquibase:
+    change-log: classpath:liquibase/db_changelog_master.yaml
+    enabled: true
+server:
+  port: 8081
+
+
+list-allowed-urls:
+  http://localhost:8081
+  http://localhost:8081
+
+token:
+  signing:
+    key: 53A73E5F1C4E0A2D3B5F2D784E6A1B423D6F247D1F6E5C3A596D635A75327855
+

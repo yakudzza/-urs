@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:17
+    container_name: project_database
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres # Пользователь базы данных
+      POSTGRES_PASSWORD: qwerty123 # Пароль для пользователя
+      POSTGRES_DB: hk_db # Имя базы данных
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Хранилище данных, чтобы не потерять их при перезапуске контейнера
+
+volumes:
+  postgres_data:
